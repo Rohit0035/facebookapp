@@ -3,17 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "export": "next export",
     "lint": "eslint"
   },
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^5.3.8",
     "leaflet": "^1.9.4",
-    "next": "15.5.4",
+    "next": "^16.1.6",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-fast-marquee": "^1.6.5",
