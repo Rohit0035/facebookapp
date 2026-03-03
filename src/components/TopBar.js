@@ -34,6 +34,7 @@ import {
 } from "react-icons/fa";
 import MenuDropdown from "./common/MenuDropdown";
 import NotifyDropdown from "./headercomponent/NotifyDropdown";
+import Image from "next/image";
 
 const Topbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -146,10 +147,11 @@ const Topbar = () => {
             <FaBell />
           </div> */}
 
-          <img
+          <Image
             src="https://i.pravatar.cc/40"
             className="rounded-circle"
             onClick={() => setIsProfileMenuOpen(!isProfileMenuOpen)}
+            alt="img-user"
           />
         </div>
 

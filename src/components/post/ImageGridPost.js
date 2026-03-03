@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -15,7 +16,7 @@ const ImageGridPost = ({ images = [] }) => {
     // ✅ SINGLE IMAGE
     if (images.length === 1) {
       return (
-        <img
+        <Image
           src={images[0]}
           onClick={() => openLightbox(0)}
           className="w-100"
@@ -30,7 +31,7 @@ const ImageGridPost = ({ images = [] }) => {
         <div className="row g-1">
           {images.map((img, i) => (
             <div className="col-6" key={i}>
-              <img
+              <Image
                 src={img}
                 onClick={() => openLightbox(i)}
                 className="w-100"
@@ -47,7 +48,7 @@ const ImageGridPost = ({ images = [] }) => {
       return (
         <div className="row g-1">
           <div className="col-6">
-            <img
+            <Image
               src={images[0]}
               onClick={() => openLightbox(0)}
               className="w-100"
@@ -56,7 +57,7 @@ const ImageGridPost = ({ images = [] }) => {
           </div>
           <div className="col-6 d-flex flex-column gap-1">
             {[1, 2].map((i) => (
-              <img
+              <Image
                 key={i}
                 src={images[i]}
                 onClick={() => openLightbox(i)}
@@ -74,7 +75,7 @@ const ImageGridPost = ({ images = [] }) => {
       <div className="row g-1">
         {images.slice(0, 4).map((img, i) => (
           <div className="col-6 position-relative" key={i}>
-            <img
+            <Image
               src={img}
               onClick={() => openLightbox(i)}
               className="w-100"

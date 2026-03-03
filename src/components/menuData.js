@@ -1,3 +1,18 @@
+import {
+  FaFacebookMessenger,
+  FaUserFriends,
+  FaVideo,
+  FaStore,
+  FaFlag,
+  FaBookmark,
+  FaGift,
+  FaCalendar,
+  FaGamepad,
+  FaBullhorn,
+  FaTh,
+  FaClock
+} from "react-icons/fa";
+
 export const menuItems = [
   { icon: <FaFacebookMessenger />, label: "Messages" },
   { icon: <FaUserFriends />, label: "Groups" },

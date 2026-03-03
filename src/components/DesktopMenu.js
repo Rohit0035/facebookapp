@@ -1,3 +1,5 @@
+import { FaCog, FaFileInvoice } from "react-icons/fa";
+
 const DesktopMenu = () => {
   return (
     <div className="fb-desktop-menu">

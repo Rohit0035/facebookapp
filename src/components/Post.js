@@ -83,7 +83,7 @@ const Post = () => {
 
                   {/* LEFT */}
                   <div className="d-flex gap-3">
-                    <img
+                    <Image
                       src="https://i.pravatar.cc/100?img=12"
                       alt="profile"
                       width="70"

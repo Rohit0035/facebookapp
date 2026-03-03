@@ -35,6 +35,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../../assets/styles/reelview.css"
+import Image from "next/image";
 
 const ReelViewer = ({ reels, startIndex, onClose }) => {
     const [active, setActive] = useState(startIndex);
@@ -228,7 +229,7 @@ const ReelViewer = ({ reels, startIndex, onClose }) => {
 
                                                     {/* PROFILE IMAGE */}
                                                     <Link href={`/profile/${item.id}`}>
-                                                        <img
+                                                        <Image
                                                             src="https://i.pravatar.cc/40"
                                                             className="rounded-circle"
                                                             width="35"
