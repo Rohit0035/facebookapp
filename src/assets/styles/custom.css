@@ -1,0 +1,192 @@
+/* Swiper Navigation Custom Styling - MagicBricks Red Theme */
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px !important;
+  height: 30px !important;
+  background-color: #fff;
+  color: #000 !important;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  padding: 8px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #fff;
+  transform: scale(1.1);
+}
+
+.swiper-button-prev {
+  left: 15px;
+}
+
+.swiper-button-next {
+  right: 15px;
+}
+
+/* Optional: hide buttons on mobile to save space */
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 25px;
+    height: 25px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 14px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: #fff;
+  }
+}
+
+/* Pagination (dots) */
+.swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e43f3f;
+  width: 12px;
+  height: 12px;
+}
+
+/* Optional shadow on top of images for better nav contrast */
+.swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+.swiper-slide:hover img {
+  transform: scale(1.05);
+}
+
+.st-hover:hover{
+  background-color: var(--primary-color) !important;
+}
+
+/* dropdowncss start */
+
+.fb-menu {
+  width: 320px;
+  background: #fff;
+  position: absolute;   /* important */
+  top: 60px;            /* adjust based on navbar */
+  right: 10px;          /* align properly */
+  z-index: 99999;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menu-page {
+  width: 100%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.menu-page.active {
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
+}
+
+.menu-item {
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-item:hover {
+  background: #f0f2f5;
+}
+
+.icon-box {
+  width: 35px;
+  height: 35px;
+  background: #e4e6eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-btn {
+  width: 35px;
+  height: 35px;
+  background: #e4e6eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* dropdowncss close */
+
+/* circle icon css */
+.ci-icon-st {
+    height: 32px !important;
+    width: 32px !important;
+    border-radius: 100px !important;
+    padding: 2px !important;
+    text-align: center !important;
+}
+/* adge circle css */
+.st-badge {
+    width: 15px !important;
+    height: 15px !important;
+    font-size: 10px !important;
+    padding: 2px !important;
+}
+.ci-icon-st:hover {
+  background-color: aqua !important;
+}
+
+/* dropdown rectrap but use css some st */
+.st-dropdown {
+    right: 12px !important;
+    left: unset !important;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .fb-mobile-top{
+    width: 100%;
+  }
+  .fb-mobile-nav{
+    width: 100%;
+  }
+}
