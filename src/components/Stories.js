@@ -10,7 +10,7 @@ export default function Stories() {
       {[1,2,3,4,5].map((item) => (
         <SwiperSlide key={item}>
           <div className="story-card">
-            <Image src={`https://i.pravatar.cc/150?img=${item}`}  alt="stories"/>
+            <Image src={`https://i.pravatar.cc/150?img=${item}`}  alt="stories" width={150} height={150}/>
           </div>
         </SwiperSlide>
       ))}

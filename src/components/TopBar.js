@@ -152,6 +152,8 @@ const Topbar = () => {
             className="rounded-circle"
             onClick={() => setIsProfileMenuOpen(!isProfileMenuOpen)}
             alt="img-user"
+            width={40}
+            height={40}
           />
         </div>
 

@@ -78,6 +78,8 @@ const ImageGridPost = ({ images = [] }) => {
             <Image
               src={img}
               onClick={() => openLightbox(i)}
+              width={100}
+              height={200}
               className="w-100"
               style={{ height: "200px", objectFit: "cover", cursor: "pointer" }}
             />
